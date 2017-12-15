@@ -15,8 +15,8 @@ const App = () => (
   <Router>
     <div>
       <Links/>
-      <Route exact path="/" component={Hello} />
-      <Route path="/about" component={About} />
+      <Route exact path="/:who?" component={Hello} />
+      <Route path="/about/:name?" component={About} />
     </div>
   </Router>
 );

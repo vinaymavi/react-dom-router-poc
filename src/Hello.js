@@ -1,3 +1,7 @@
-import React from 'react';
+import React from "react";
 
-export default () => <h1>Hello</h1>;
+export default ({ match }) => (
+  <h1>
+    Hello {match.params.who || ""}
+  </h1>
+);
